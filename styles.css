@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #0b3d2e 0%, #063224 100%);
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #64ffda;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  padding: 3rem 6rem;
+}
+
+.profile-card {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.name-cn {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-weight: 600;
+  color: #64ffda;
+}
+
+.org {
+  color: #bbb;
+  margin-bottom: 1.2rem;
+}
+
+.social-icons a {
+  color: #f0f0f0;
+  font-size: 1.2rem;
+  margin: 0 0.4rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #64ffda;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #223f38;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #2a5a4f;
+}
+
+.about h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.grid div {
+  width: 48%;
+}
+
+.grid h3 {
+  color: #64ffda;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style: disc inside;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+
+  .grid div {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
